@@ -5,7 +5,7 @@ sudo docker stop $(docker ps -aq)
 sudo docker rm $(docker ps -aq)
 sudo docker run -d -p 3306:3306 --name ContainerBD -e "MYSQL_DATABASE=ToodDatabase" -e "MYSQL_ROOT_PASSWORD=sptech" mysql:5.7
 sudo docker exec -it ContainerBD bash
-mysql –u aluno -psptech
+mysql –u root -psptech
 CREATE TABLE IF NOT EXISTS `ToodDatabase`.`DadoTotem` (
   `idDadosTotem` INT NOT NULL AUTO_INCREMENT,
   `dataHora` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
