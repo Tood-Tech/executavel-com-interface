@@ -1,8 +1,8 @@
 sudo apt update && sudo apt upgrade –y
 sudo apt install docker.io
 sudo docker pull mysql:5.7
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
 sudo docker run -d -p 3306:3306 --name ContainerBD -e "MYSQL_DATABASE=ToodDatabase" -e "MYSQL_ROOT_PASSWORD=sptech" mysql:5.7
 sudo docker exec -it ContainerBD bash
 mysql –u aluno -psptech
