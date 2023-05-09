@@ -4,8 +4,9 @@
 
 ----------------------  EC2   -------------------------------------
 1 - Rode o script
-2 - Ele irá pedir a senha, que no caso é: sptech
-3 - Copie e cole o comando abaixo:
+2 - Digite: mysql -u root -p
+3 - Ele irá pedir a senha, que no caso é: sptech
+4 - Copie e cole o comando abaixo:
 
 CREATE TABLE IF NOT EXISTS `ToodDatabase`.`DadoTotem` (
   `idDadosTotem` INT NOT NULL AUTO_INCREMENT,
