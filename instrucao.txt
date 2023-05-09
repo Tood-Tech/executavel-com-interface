@@ -2,8 +2,11 @@
 1 - Pegue o IPv4 público da sua instância
 2 - Adicione o IPv4 no firewall 
 
+-------------------------- OBS ---------------------------------
+1 - O script banco.sh sempre que rodado vai deletar os container existentes
+2 - Para rodar o jar use o script jar.sh
 ----------------------  EC2   -------------------------------------
-1 - Rode o script
+1 - Digite: bash banco.sh
 2 - Digite: mysql -u root -p
 3 - Ele irá pedir a senha, que no caso é: sptech
 4 - Copie e cole o comando abaixo:
@@ -19,3 +22,4 @@ CREATE TABLE IF NOT EXISTS `ToodDatabase`.`DadoTotem` (
 
 4 - Digite: exit;
 5 - Digite: exit;
+6 - Digite: bash jar.sh
