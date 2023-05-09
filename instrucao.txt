@@ -23,3 +23,10 @@ CREATE TABLE IF NOT EXISTS `ToodDatabase`.`DadoTotem` (
 4 - Digite: exit;
 5 - Digite: exit;
 6 - Digite: bash jar.sh
+
+------------------------------- Verificando os Dados Inseridos no Mysql -------------
+1 - sudo docker exec -it ContainerBD bash
+2 - mysql -u root -p
+3 - Senha: sptech
+4 - use ToodDatabase;
+5 - select * from DadoTotem;
