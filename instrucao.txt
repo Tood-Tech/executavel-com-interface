@@ -1,11 +1,12 @@
-sudo apt update && sudo apt upgrade –y
-sudo apt install docker.io
-sudo docker pull mysql:5.7
-sudo docker run -d -p 3306:3306 --name ContainerBD -e "MYSQL_DATABASE=ToodDatabase" -e "MYSQL_ROOT_PASSWORD=sptech" mysql:5.7
-sudo docker exec -it ContainerBD bash
-mysql –u root -p
+------------------------ Preparativos -----------------------
+1 - Pegue o IPv4 público da sua instância
+2 - Adicione o IPv4 no firewall 
 
------------------------------------
+----------------------  EC2   -------------------------------------
+1 - Rode o script
+2 - Ele irá pedir a senha, que no caso é: sptech
+3 - Copie e cole o comando abaixo:
+
 CREATE TABLE IF NOT EXISTS `ToodDatabase`.`DadoTotem` (
   `idDadosTotem` INT NOT NULL AUTO_INCREMENT,
   `dataHora` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
@@ -14,3 +15,5 @@ CREATE TABLE IF NOT EXISTS `ToodDatabase`.`DadoTotem` (
   `qtdProcessador` varchar(100),
   PRIMARY KEY (`idDadosTotem`)
 );
+
+4 - Digite: exit;
