@@ -18,3 +18,4 @@ CREATE TABLE IF NOT EXISTS `ToodDatabase`.`DadoTotem` (
 );
 
 4 - Digite: exit;
+5 - Digite: exit;
